@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="John Paulo" />
+    <title>Alcool x Gasolina</title>
+
+    <link href="css/estilo.css" rel="stylesheet" media="all"
+
+    <!-- mecanismos de busca -->
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="combustivel, combustível, app, web, webapp, etanol, gasolina, melhor, senai, john paulo, desenvolvedor, desenvolvimento, desenvolvido, front, end, front-end, ti, html, css, javascript" />
+    <meta name="description" content="webapp desenvolvido no curso de front-end do senai brasilia" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Calcular Alcool x Gasolina</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form onsubmit="return false;" class="formulario">
+                <label>Gasolina (preço por litro)</label><br />
+                <div class="single-input">
+                    <input type="text"  id="gasolina" required class="input" onkeydown="verificarInput(event);"/>
+                    <label>R$ </label><br />
+                </div>
+
+                <label>Álcool (preço por litro)</label><br />   
+                <div class="single-input">
+                    <input type="text"  id="etanol" required class="input" onkeydown="verificarInput(event)"/>
+                    <label aria-disabled="">R$ </label><br />
+                </div>
+
+                <div class="btn">
+                    <button onclick="combustivel();">Calcular</button>
+                </div>
+                <br />
+                <br />
+                <div id="result"></div>
+            </form>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
