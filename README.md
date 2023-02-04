@@ -10,7 +10,7 @@ O projeto foi desenvolvido com HTML, CSS e JavaScript, e utiliza uma lógica sim
 
 ## Instruções
 - Insira os valores de Gasolina e Etanol
-- Clique no botão "Verificar"
+- Clique no botão "Calcular"
 - O resultado será apresentado na tela, informando qual combustível é mais vantajoso para abastecer.
 
 ## Observações
