@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Name
-        run: echo "Nome do usuário: ${{ github.event.inputs.name }}"
+        run: echo  The tags are ${{ inputs.name }} 
       - name: Print Greeting
         run: |
           if [[ -n "${{ github.event.inputs.greeting }}" ]]; then
-            echo "Mensagem de saudação: ${{ github.event.inputs.greeting }}"
+            echo "Mensagem de saudação: ${{ inputs.greeting }}"
           else
-            echo "Nenhuma mensagem de saudação fornecida."
+            echo "Nenhuma mensagem de saudação fornecida. ${{ inpu"
           fi
