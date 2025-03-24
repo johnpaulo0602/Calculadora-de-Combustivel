@@ -1,0 +1,9 @@
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Nome do usuário'
+        required: true
+      greeting:
+        description: 'Mensagem de saudação'
+        required: false
