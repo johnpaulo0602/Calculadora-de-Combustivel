@@ -16,9 +16,4 @@ jobs:
       - name: Print Name
         run: echo  The tags are ${{ inputs.name }} 
       - name: Print Greeting
-        run: |
-          if [[ -n "${{ github.event.inputs.greeting }}" ]]; then
-            echo "Mensagem de saudação: ${{ inputs.greeting }}"
-          else
-            echo "Nenhuma mensagem de saudação fornecida. ${{ inpu"
-          fi
+        run: echo  The tags are ${{ inputs.name }} 
