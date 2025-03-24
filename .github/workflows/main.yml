@@ -1,6 +1,6 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: 
+on:
   workflow_dispatch:
     inputs:
       name:
@@ -13,5 +13,12 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 ${{ github.input.name }}."
-      - run: echo "🎉 ${{ github.input.greeting }}."
+      - name: Print Name
+        run: echo "Nome do usuário: ${{ github.event.inputs.name }}"
+      - name: Print Greeting
+        run: |
+          if [[ -n "${{ github.event.inputs.greeting }}" ]]; then
+            echo "Mensagem de saudação: ${{ github.event.inputs.greeting }}"
+          else
+            echo "Nenhuma mensagem de saudação fornecida."
+          fi
